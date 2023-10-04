@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kyyte</title>
+  <link rel="stylesheet" href="./css/home.css" />
+  <link rel="stylesheet" href="./css/custom.css" />
+  <link rel="icon" href="./images/banner/kyyte-search-icon.png" />
+  <!-- <link rel="stylesheet" href="./css/footer.css" /> -->
+  <link rel="stylesheet" type="text/css" href="css/customheader.css" />
+  <link href="https://fonts.cdnfonts.com/css/d-din" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="css/plugins.css" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <link rel="stylesheet" type="text/css" href="css/templete.css" />
+  <link class="skin" rel="stylesheet" type="text/css" href="css/skin/skin-1.css" />
+
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous" />
+  <!-- JavaScript Bundle with Popper -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
+  <title></title>
+  <!--START:: stylesheet for fade in & fade out animation while scrolling-->
+  <link rel="stylesheet" type="text/css" href="css/templete.css" />
+  <link class="skin" rel="stylesheet" type="text/css" href="css/skin/skin-1.css" />
+  <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.10.2/lottie.min.js"></script>-->
+  <script src="js/lottie.min.js"></script>
+  <!--END:: stylesheet for fade in & fade out animation while scrolling-->
+
+  <style>
+    @media only screen and (max-width: 1199px) {
+      .split-box-area>[class*="col-"] {
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+      }
+    }
+
+    @media only screen and (max-width: 767px) {
+      .split-box-area>[class*="col-"] {
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+      }
+
+      .split-box-area.row.spno {
+        margin-left: 0px;
+        margin-right: 0px;
+      }
+
+    }
+
+    @media (min-width:320px) and (max-width: 767px) {
+      .container-elements h1 {
+        text-align: center ! important; 
+        font-family: "DIN Condensed Bold" !important;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 7vw;
+        line-height: 110%;
+        text-transform: uppercase; 
+        color: #f99400 !important;
+        position: absolute;
+        /* top: 90% !important; */
+        /* left: 9%; */
+        text-align:center;
+        /* margin-top:50px !important;
+        margin-bottom:50px ! important;  */
+        transform: translateY(-64%); 
+      }
+      .digital-section-subdiv-1{
+        margin-top:46% ! important;
+        margin-bottom:10% ! important;
+        text-align: center ! important;
+      }
+    } 
+    
+    @media (min-width: 768px) and (max-width:2000px){
+      .container-elements{
+        display:flex;
+        flex-direction: row;
+        /* justify-content: start; */
+        align-items: center; 
+        left:0 ! important;
+        width:100% ! important; 
+        margin-left:3.7% ! important;
+      }
+      .digital-section-subdiv-2{
+        width:80% ! important;
+      }
+      .digital-section-subdiv-1{
+        width:20% ! important;
+        margin-top: 7% ! important;
+      }
+
+      .digital-section-subdiv-2 img { 
+        height:350% ! important;
+        width:700% ! important;
+      }
+      
+      .container-elements h1 {  
+        font-family: "DIN Condensed Bold" !important;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 6vw;
+        line-height: 110%;
+        text-transform: uppercase; 
+        color: #f99400 !important;
+        position: absolute;
+        /* top: 67% !important;
+        left: 9%; */ 
+        transform: translateY(-64%);
+      }
+    }
+    @media(min-width:991px)and (max-width:1200px){
+      .digital-transform{
+        padding-top:11%;
+      }
+    }
+  
+
+    @media (min-width:320px)and (max-width:767px) { 
+      .digital-heading {
+        font-family: "DIN Condensed Bold";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 52px !important; 
+        line-height: 110%;
+        text-align: center ! important;
+        color: #f99400;
+        position: absolute;
+        top: 55%;
+        transform: translateY(-64%);
+      }
+    }
+
+    @media (min-width: 768px) and (max-width:2000px) {
+      .digital-heading {
+        text-align: left ! important;
+        top:75% ! important;
+      }
+    }
+
+    .digital-section {
+      display:flex;
+      flex-direction:row;
+      align-items:center; 
+    }
+
+    @media (max-width:800px) {
+      .digital-section {
+        text-align: center ! important;
+      }
+
+    }
+
+    @media (max-width:767px){
+      .text-img-container{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        padding-top:10% !important;
+      }
+      .digital-section-subdiv-1{
+        padding-bottom:30% !important;
+      }
+      .home-page-img{ 
+        max-width:110% !important;
+      }  
+    }
+    .home-page-img{   
+      background-size: cover;
+      background-repeat: no-repeat;
+    } 
+    @media (min-width:376px) and (max-width: 440px) {
+      .home-page-img{
+        margin-top: -10%;
+      }
+      .digital-heading{
+        top: 30% !important;
+      }
+    }  
+    @media (min-width:450px) and (max-width: 490px) {
+      .home-page-img{
+        margin-top: -30%;
+      }
+      .digital-heading{
+        top: -5% !important;
+      }
+    }
+    @media (min-width:600px) and (max-width: 639px) {
+      .digital-section-subdiv-1{
+        padding-bottom:0px !important;
+      }
+      .digital-section{
+        height: auto !important;
+      }
+    }
+    @media (min-width:630px) and (max-width: 760px) {
+      .home-page-img{
+        margin-top: -52%;
+      }
+      .digital-heading{
+        top: -45% !important;
+        text-align: center;
+      }
+    }
+    @media (min-width:710px) and (max-width: 760px) {
+      .digital-heading{
+        left: 7%;
+      }
+      .home-page-img{
+        width: 90%;
+        margin-left: 6%;
+      }
+    }
+    /* new added 30-03-23 */
+    .home-image-2{ 
+      background-size: cover;
+      background-repeat: no-repeat;
+      /* height: 600px; */
+      width: 100%;
+    }
+  </style>
+</head>
+
+<body id="body-section">
+  <!-- services  popup -->
+  <div class="services-none" id="service1">
+    <div class="service-pop-parent">
+      <div class="service-child">
+        <h1 id="service-none" onclick="service_close1()">
+          <img src="./images/banner/close-icon.png" alt="">
+        </h1>
+        <p> Our advisory services provide clients with strategic guidance with a holistic perspective to help them achieve
+          their business goals. We work closely with organizations to identify challenges and opportunities, analyze
+          market trends, and develop actionable recommendations. Our team brings a wealth of industry-specific knowledge
+          and expertise to provide tailored solutions that address unique business needs. We pride ourselves on building
+          long-lasting relationships with our clients, providing ongoing support, and staying ahead of industry trends
+          to ensure continued success.
+        </p>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div class="services-none" id="service2">
+    <div class="service-pop-parent">
+      <div class="service-child">
+        <h1 id="service-none" onclick="service_close2()">
+          <img src="./images/banner/close-icon.png" alt="">
+        </h1>
+        <p>Our technical innovation solutions help organizations leverage existing ERP capabilities or emerging
+          technologies to drive business growth and improve operational efficiency. We work with clients to identify
+          opportunities for innovation, apply existing innovations into their digital landscape, and develop custom
+          solutions that are scalable. Our team of experts has a proven track record of delivering innovative solutions
+          that transform industries and create new opportunities. We provide ongoing support and training to ensure
+          successful implementation and adoption, enabling organizations to stay ahead of the competition and achieve
+          sustainable growth.
+        </p>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="services-none" id="service3">
+    <div class="service-pop-parent">
+      <div class="service-child">
+        <h1 id="service-none" onclick="service_close3()">
+          <img src="./images/banner/close-icon.png" alt="">
+        </h1>
+        <p>
+          Our system implementation service offers end-to-end solutions for organizations seeking to integrate new
+          technology into their existing infrastructure. Our team of experts works closely with clients to identify
+          requirements, design and configure the system, develop custom applications if necessary, test, and launch. We
+          provide training and support to ensure a smooth transition and ongoing success. Our experience across
+          industries and technologies enables us to deliver fast and efficient implementation, minimizing disruption to
+          your business.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="services-none" id="service4">
+    <div class="service-pop-parent">
+      <div class="service-child">
+        <h1 id="service-none" onclick="service_close4()">
+          <img src="./images/banner/close-icon.png" alt="">
+        </h1>
+        <p>
+          Our next-gen application management services offer comprehensive solutions to help organizations manage and
+          optimize their applications. We provide end-to-end support, from development and deployment to ongoing
+          maintenance and updates. Our team of experts leverages the latest technologies and methodologies to ensure
+          applications are secure, scalable, and efficient. We provide 24/7 monitoring and support to ensure uptime and
+          minimize downtime. Our agile approach enables us to quickly adapt to changing business needs and deliver
+          continuous improvement. We help organizations streamline operations, reduce costs, and enhance customer
+          experiences through modern application management.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="services-none" id="service5">
+    <div class="service-pop-parent">
+      <div class="service-child">
+        <h1 id="service-none" onclick="service_close5()">
+          <img src="./images/banner/close-icon.png" alt="">
+        </h1>
+        <p>
+          Our business outsourcing services enable organizations to focus on their core competencies while we take care
+          of non-core functions. We offer a range of services, from finance and accounting to procurement and customer
+          service. Our team of experts provides tailored solutions that meet unique business needs, delivering cost
+          savings and operational efficiency. We leverage the latest technologies and methodologies to ensure compliance
+          and security. Our scalable solutions enable organizations to quickly adapt to changing business needs, and our
+          ongoing support ensures continuous improvement. We help organizations achieve sustainable growth through
+          efficient outsourcing solutions.
+        </p>
+      </div>
+    </div>
+  </div> 
+  <!-- services popup end  -->
+
+  <!--------------------------------------------------------------------------------------------------------------------- section  1  -->
+  <!--<div id="loading-area">
+    <div class="parent-loader">
+      <div id="animation-container8" class="loader-position">
+        <script>
+          var animation = bodymovin.loadAnimation({
+            container: document.getElementById("animation-container8"),
+            path: "./images/loade-custom/loader.json",
+            render: "svg",
+            loop: false,
+            autoplay: true,
+            name: "demo animation",
+          }); 
+
+        </script>
+      </div>
+    </div>
+  </div>-->
+
+  <header class="nav-section-custom">
+    <div class="logo-section-custom">
+      <a href="index.html"> <img src="./images/icon/logo.png" alt="" /></a>
+      <!-- <h1>FILMABLE</h1> -->
+    </div>
+    <div class="links">
+      <ul class="menu-links"></ul>
+    </div>
+
+    <img src="./images/icon/burger-menu.png" class="toggle-collaps-custom" alt="" onclick="openNav()" />
+    <div id="mySidenav" class="sidenav-custom">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <p class="menu-text">MENU</p>
+      <a href="index.html">HOME</a>
+      <a href="about.html">ABOUT</a>
+      <a href="services.html">SERVICES</a>
+      <a href="industries.html">INDUSTRIES & FUNCTIONAL DOMAINS </a>
+      <a href="ourpartners.html">PARTNERS</a>
+      <a href="customers.html">CUSTOMERS</a>
+      <a href="career.html">CAREERS</a>
+      <a href="contact.html">CONTACT US</a>
+      <!-- loader animation start here  -->
+      <div class="parent-loader">
+        <div id="animation-container" class="loader-class" style="position:relative; top:5px;">
+          <script>
+              var animation = bodymovin.loadAnimation({
+              container: document.getElementById("animation-container"),
+              path: "./images/loade-custom/loader.json",
+              render: "svg",
+              loop: true,
+              autoplay: true,
+              name: "demo animation",
+            });
+          </script>
+        </div>
+      </div>
+
+      <!-- loader animation end here  -->
+    </div>
+  </header>
+  <div class="page-content p-0 container-fluid">
+    <!-- contact area -->
+
+    <!-- Split Slider -->
+    <div class="section-full ">
+      <div class="row split-box-area spno">
+        <div class="col-xl-12 col-lg-12 col-md-12 col-12 row split-box background-white-ser" id="project1">
+          <div class="digital-section">
+            <a href="contact.html"><button class="partner-contact-us-button">CONTACT US</button></a>
+            <div class="container-fluid">
+              <div class="row digital-transform container-elements" >
+                <div class="col-lg-6 col-12 col-sm-12 col-md-6 col-xl-6 col-6 digital-section-subdiv-1">
+                  <h1 class="digital-heading"> Digital  Transformation Simplified</h1>
+                </div>
+                <div class="col-lg-6  col-sm-12 col-12 col-md-6 col-xl-6 col-6 digital-section-subdiv-2 kyyte-animate ">
+
+                  <!-- <div class="home-image-2"> </div> -->
+                  <div id="animation-kyyte" class="home-page-img desktop">
+                    <!--<img class="img-desktop-banner" src="./images/animation-kyyte-desktop.webp" alt="" />
+                    <script>
+                      var animation = bodymovin.loadAnimation({
+                        container: document.getElementById("animation-kyyte"),
+                        path: "./images/animate/final-without-animation.json",
+                        render: "svg",
+                        loop: true,
+                        autoplay: true,
+                        name: "demo animation",
+                      });
+                    </script>-->
+                  </div>
+                    <div class="home-page-img mobile">
+                      <img class="img-mobile-banner" src="./images/animation-kyyte-mobile.webp" alt="" />
+                    </div>
+                 </div> 
+              </div>
+            </div>
+          <!-- vidya code end here -->
+            
+          </div>
+        </div>
+
+        <div class="col-xl-12 col-lg-12 col-md-12 col-12 row split-box background-white-ser" id="project1">
+          <div class="aboutus-section">
+            <img src="./images/banner/circuit-img.svg" class="about-circuit-img" alt="" />
+            <img src="./images/banner/circuit-img.svg" class="about-circuit-img2" alt="" />
+            <div class="about-content-section">
+              <h1 class="about-haeding pb-3">ABOUT US</h1>
+              <p class="about-para ">
+                An outcome-focused, customer centric, and innovation driven
+                company that amplifies untapped technology investments by
+                providing process optimization, deep industry expertise, and
+                delivery excellence.
+              </p>
+            </div>
+          </div>
+          <div class="why-kyyte-section">
+            <img class="why-circuit" src="./images/banner/circuit-img.png" alt="" />
+            <div class="why-kyyte-parent">
+              <div class="why-kyyte-child1">
+                <h1 class="why-kyyte-header">WHY KYYTE?</h1>
+                <p class="why-kyyte-para ">
+                  Kyyte is designed to add value to your businesses by
+                  interfacing digital transformation, innovation and
+                  customer-focused business approach to facilitate the growth
+                  of your business and optimizes business and process
+                  standardization.
+                </p>
+              </div>
+              <div class="why-kyyte-child2">
+                <div class="why-kyyte-sub">
+                  <p>
+                    Seasoned leadership, deep expertise, proven trusted
+                    advisory
+                  </p>
+                </div>
+                <div class="why-kyyte-sub">
+                  <p class="ourservices-extra-equal-space">
+                    Agile, industry focused,<br />
+                    speed-to-value
+                  </p>
+                </div>
+                <div class="why-kyyte-sub">
+                  <p class="ourservices-extra-equal-space">Pragmatic, personal, responsive</p>
+                </div>
+                <div class="why-kyyte-sub">
+                  <p class="ourservices-extra-equal-space">Steeped in a client serving mindset</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xl-12 col-lg-12 col-md-12 col-12 row split-box background-white-ser" id="project1">
+          <div class="our-services-section">
+            <div>
+              <img class="circuit-img" src="./images/banner/circuit-img.svg" alt="" />
+              <div>
+                <h1 class="services-heading">OUR SERVICES</h1>
+                <p class="services-para">
+                  Our services enable E2E digital transformation and enhanced
+                  CX by bridging the gap between innovation, transformation,
+                  and affordability
+                </p>
+              </div>
+              <div class="our-services-parent">
+                <div class="our-services-child" onclick="services1()">
+                  <img src="./images/our-services/1-serv-svg.svg" alt="" />
+                  <h1>Advisory Services</h1>
+                </div>
+                <div class="our-services-child" onclick="services2()">
+                  <img src="./images/our-services/2-serv-svg.svg" alt="" />
+                  <h1>Innovative Solutions</h1>
+                </div>
+                <div class="our-services-child" onclick="services3()">
+                  <img src="./images/our-services/3-serv-svg.svg" alt="" />
+                  <h1>Implementation Services</h1>
+                </div>
+                <div class="our-services-child" onclick="services4()">
+                  <img src="./images/our-services/4-serv-svg.svg" alt="" class="pt-1" />
+                  <h1>Next Gen Application Managed Services</h1>
+                </div>
+                <div class="our-services-child" onclick="services5()">
+                  <img src="./images/our-services/5-serv-svg.svg" alt="" />
+                  <h1>Business Outsourcing</h1>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+ 
+        <div class="col-xl-12 col-lg-12 col-md-12 col-12 row split-box background-white-ser" id="project1">
+          <div class="section-full">
+            <div class="row m-lr0 services-box-area">
+              <div class="col-lg-4 col-md-4 wow fadeInLeft index-hover-section-3 innovation-bg-custom1" data-wow-delay="1s"
+                data-wow-duration="2s">
+                <div class="services-box index-service">
+                  <div class="services-text">
+                    <div class="number number-size">01</div>
+                    <h2 class="title"> Next Gen innovation</h2>
+                    <p class="description">
+                      Kyyte is laser focused on bringing pragmatic,
+                      fit-for-purpose innovation for its clients that drive
+                      tangible value
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-4 wow fadeInLeft index-hover-section-3 innovation-bg-custom2" data-wow-delay="1.5s"
+                data-wow-duration="2s" 
+                  >
+                <div class="services-box">
+                  <div class="services-text">
+                    <div class="number number-size">02</div>
+                    <h2 class="title">DIGITAL TRANSFORMATION</h2>
+                    <p class="description">
+                      Kyyte operates with an outcome - based approach to
+                      digital transformation by leveraging decades of
+                      transformation experience and deep technical expertise
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-4 wow fadeInLeft index-hover-section-3 innovation-bg-custom3" data-wow-delay="2s"
+                data-wow-duration="2s" 
+                  >
+                <div class="services-box">
+                  <div class="services-text">
+                    <div class="number number-size">03</div>
+                    <h2 class="title">Customer Experience</h2>
+                    <p class="description">
+                      Kyyte prioritizes the customer experience and adoption
+                      of digital solutions by using next-gen technology and
+                      innovations to achieve the targeted outcome
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!------------------------------------------------------------------------------------------ Industry & Functional Domains   -->
+
+        <div class="col-xl-12 col-lg-12 col-md-12 col-12 12ow split12box b12ckground-blue-ser" id="project1">
+         
+        <!--------------------------------------------------------------------------------------------------------------------- section 6  -->
+ 
+        <div class="domains-section">
+          <div class="container">
+            <h1 class="domain-heading">Industry & Functional Domains</h1>
+            <div class="row">
+              <div class="col-lg-1   ">
+              </div>
+        <div class="col-lg-3 col-6 col-md-4  "  style="margin: auto;">
+          <img src="./images/banner/icons/new-home-industies.svg" alt="image" style="margin: auto;"/>
+          </div> 
+              <div class="col-lg-4  col-md-4 text-center  mx-auto  domain-center-img" style="position:relative;left:-14px">
+                <img class="git-center" src="./images/banner/center-3d.png" alt="" />
+                <img class="png-center" src="./images/banner/industrial-3d.png" alt="">
+              </div> 
+
+      
+        <div class="col-lg-4 col-6 col-md-4 px-0 " style="margin: auto;">
+          <img src="./images/banner/icons/home-functional-img.svg" alt="functiona-img" class="industrial-padding-home"  style="margin: auto;"/>
+          </div> 
+            </div>
+          </div>
+        </div>
+      </div>
+
+        <!-- <div class="col-xl-12 col-lg-12 col-md-12 col-12 row split-box background-white-ser" id="project1">
+          <div class="ceo-section">
+            <div class="container-fluid">
+              <div class="text-center py-5 ceo-heading">
+                <h1>Leadership Message</h1> 
+              </div>
+              <div class="row">
+               <div class="col-md-2"></div>
+                <div class="col-xl-4 text-center ceo-img">
+                  <img src="./images/banner/ceo-bottom.jpg" alt="" />
+                </div>
+                <div class="col-xl-4">
+                  <p class="ceo-para" style="padding-top: 20px;">
+                    Customer Experience continues to be a critical success
+                    factor of any digital transformation. Kyyte’s deep
+                    functional expertise and proven industry driven delivery
+                    excellence helps to access untapped potential within your
+                    existing ERP investments in an agile, accelerated, and
+                    outcome-oriented way. We are focused on “personalized
+                    innovation” that is specific and practical. With a
+                    value-driven mindset, Kyyte offers advisory,
+                    implementation, and outsourcing services. Simplifying the
+                    transformation journey is the heartbeat of who we are and
+                    what we strive for.
+                  </p>
+                  <h1 class="ily-heading col-lg-0">Robert Saini</h1>
+                  <h3 class="infotech-heading ceo-italik">Executive Vice President, Kyyte</h3>
+                </div>
+                <div class="col-md-2"></div>
+              </div>
+            </div>
+          </div>
+        </div> -->
+      </div>
+    </div>
+  </div>
+  
+
+  <!--------------------------------------------------------------------------------------------------------------------- section  2  -->
+  <footer class="site-footer ">
+    <!-- footer top part -->
+    <div class="footer-bg-custom">
+        <div class="container">
+            <div class="row">
+
+
+                <div class="col-md-12">
+                    <ul class="social-link index-footer pb-3">
+                      <li>
+                        <a href="https://www.facebook.com/people/Kyyte-Inc/100090998417788/"  target="_blank"><span>FACEBOOK</span> <i class="fa fa-facebook"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/kyyteinc"  target="_blank"><span>INSTAGRAM</span> <i class="fa fa-instagram"></i></a>
+                    </li>
+                        <li>
+                            <a href="https://www.linkedin.com/company/kyyteinc"
+                                target="_blank"><span>LINKEDIN</span> <i class="fa fa-linkedin"></i></a>
+                        </li>
+                        <li>
+                            <a href=" https://twitter.com/Kyyte_Inc" target="_blank"><span>TWITTER</span> <i
+                                    class="fa fa-twitter"></i></a>
+                        </li>
+                        <li class="ml-auto">
+                            <a href="contact.html"> <span>CONTACT US</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer bottom part -->
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="footer-bottom-in">
+              <div class="">
+                <a class="footer-copyright-custom">© 2019-2023 KYYTE. All rights reserved.</a>
+              </div>
+                <div class="footer-copyright">
+                </div>
+					
+                <div class="footer-copyright">
+                    <!-- <p> 5865 North Point Parkway, Suite 100, Alpharetta, GA 30022</p> -->
+                   
+                    <p> <a href="privacy.html" class="footer-privacy-text"  target="_blank">Privacy Policy</a>
+					 <a href="termsofuse.html" class="footer-privacy-text"  target="_blank">Terms Of Use</a></p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+  <script type="text/javascript">
+    /* Simple appearence with animation AN-1*/
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "320px";
+    }
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+    /* Simple appearence with animation AN-1*/
+
+    var className = "nav-section-custom";
+    var className2 = "nav-section-custom-active";
+
+    window.onscroll = function () {
+      if (window.scrollY >= 1) {
+        document
+          .getElementsByTagName("header")[0]
+          .classList.remove(className);
+        document.getElementsByTagName("header")[0].classList.add(className2);
+      } else {
+        document.getElementsByTagName("header")[0].classList.add(className);
+        document
+          .getElementsByTagName("header")[0]
+          .classList.remove(className2);
+      }
+    };
+
+    // services  popup start 15-03-23
+
+    function services1() {
+        document.getElementById("service1").style.display = "block";
+        document.getElementById("body-section").style.overflow = "hidden";
+      }
+      function service_close1() {
+        document.getElementById("service1").style.display = "none";
+        document.getElementById("body-section").style.overflow = "auto";
+        document.getElementById("body-section").style.top = "0px";
+      }
+
+      function services2() {
+        document.getElementById("service2").style.display = "block";
+        document.getElementById("body-section").style.overflow = "hidden";
+      }
+      function service_close2() {
+        document.getElementById("service2").style.display = "none";
+        document.getElementById("body-section").style.overflow = "auto";
+        document.getElementById("body-section").style.top = "0px";
+      }
+
+      function services3() {
+        document.getElementById("service3").style.display = "block";
+        document.getElementById("body-section").style.overflow = "hidden";
+      }
+      function service_close3() {
+        document.getElementById("service3").style.display = "none";
+        document.getElementById("body-section").style.overflow = "auto";
+        document.getElementById("body-section").style.top = "0px";
+      }
+
+      function services4() {
+        document.getElementById("service4").style.display = "block";
+        document.getElementById("body-section").style.overflow = "hidden";
+      }
+      function service_close4() {
+        document.getElementById("service4").style.display = "none";
+        document.getElementById("body-section").style.overflow = "auto";
+        document.getElementById("body-section").style.top = "0px";
+      }
+
+      function services5() {
+        document.getElementById("service5").style.display = "block";
+        document.getElementById("body-section").style.overflow = "hidden";
+      
+      }
+      function service_close5() {
+        document.getElementById("service5").style.display = "none";
+        document.getElementById("body-section").style.overflow = "auto";
+        document.getElementById("body-section").style.top = "0px";
+      }
+      // services popup end
+  </script>
+
+  <script src="js/jquery.min.js"></script>
+  <!-- JQUERY.MIN JS -->
+  <script src="plugins/wow/wow.js"></script>
+  <!-- WOW JS -->
+  <script src="plugins/bootstrap/js/popper.min.js"></script>
+  <!-- BOOTSTRAP.MIN JS -->
+  <script src="plugins/bootstrap/js/bootstrap.min.js"></script>
+  <!-- BOOTSTRAP.MIN JS -->
+  <script src="plugins/magnific-popup/magnific-popup.js"></script>
+  <!-- MAGNIFIC POPUP JS -->
+  <script src="plugins/imagesloaded/imagesloaded.js"></script>
+  <!-- IMAGESLOADED -->
+  <script src="plugins/masonry/masonry-3.1.4.js"></script>
+  <!-- MASONRY -->
+  <script src="plugins/masonry/masonry.filter.js"></script>
+  <!-- MASONRY -->
+  <script src="plugins/owl-carousel/owl.carousel.js"></script>
+  <!-- OWL SLIDER -->
+  <script src="plugins/lightgallery/js/lightgallery-all.min.js"></script>
+  <!-- Lightgallery -->
+  <script src="js/custom.js"></script>
+  <!-- CUSTOM FUCTIONS  -->
+  <script src="js/dz.carousel.js"></script>
+  <!-- SORTCODE FUCTIONS  -->
+</body>
+
+</html>

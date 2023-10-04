@@ -1,0 +1,36 @@
+# Ativar Compactação GZIP
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/plain text/html text/xml application/xml application/xhtml+xml text/css application/javascript application/x-javascript
+</IfModule>
+
+# Ativar cache
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresDefault "access plus 1 month"
+    ExpiresByType text/css "access plus 1 year"
+    ExpiresByType application/javascript "access plus 1 year"
+    ExpiresByType image/x-icon "access plus 1 year"
+    ExpiresByType image/jpeg "access plus 1 year"
+    ExpiresByType image/png "access plus 1 year"
+    ExpiresByType image/gif "access plus 1 year"
+    ExpiresByType application/x-shockwave-flash "access plus 1 year"
+    ExpiresByType text/html "access plus 3 days"
+    ExpiresByType image/webp "access plus 1 year"
+</IfModule>
+
+# Definir cache público para recursos compartilhados
+<IfModule mod_headers.c>
+    Header set Cache-Control "public"
+    <FilesMatch "\\.(css|js|jpg|jpeg|png|gif|swf)$">
+        Header set Cache-Control "max-age=2592000"
+    </FilesMatch>
+    <FilesMatch "\.webp$">
+        Header set Cache-Control "max-age=2592000"
+    </FilesMatch>
+</IfModule>
+
+# Comprimir arquivos de texto para menor tamanho
+<IfModule mod_mime.c>
+    AddType application/x-font-ttf .ttf
+    AddOutputFilterByType DEFLATE text/html text/plain text/xml application/xml application/xhtml+xml text/css application/javascript application/x-javascript
+</IfModule>
