@@ -105,6 +105,29 @@ function validateForm(form) {
 
 }
 
+function getEmailBody(form) {
+    return `
+        <div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Full Name</th>
+                        <th>Email</th>
+                        <th>Message</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>${form?.fullname?.value}</td>
+                        <td>${form?.email?.value}</td>
+                        <td>${form?.message?.value}</td>
+                    </tr>
+                       </tbody>
+            </table>
+        </div>
+    `;
+}
+
 
 form.addEventListener('submit', (e) => {
 
@@ -115,9 +138,9 @@ form.addEventListener('submit', (e) => {
         Email.send({
             SecureToken: "2b9447bf-264f-4765-bc13-474d1200ce32",
             To: 'info@kyyte.io',
-            From: form?.email?.value?.trim(),
+            From: 'kyyte@kyyte.io',
             Subject: "Online Customer query",
-            Body: form?.message?.value?.trim(),
+            Body: getEmailBody(form),
 
 
         }).then(
@@ -147,12 +170,4 @@ form.addEventListener('submit', (e) => {
             .catch(error => alert(error))
 
     }
-
-
-    
-
-
-
-
-
-})
+});
